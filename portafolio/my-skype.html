@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ing. Renier Ferrer | Skype</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <!-- Para invocar una hoja de estilo dependiendo del tamano de la pantalla -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/media.css" media="screen and (max-width:768px)"> -->
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <!--viewport sirve para asegurar legibilidad del contenido en cualquier dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <i class="icon-menu burguer-button" id="burguer-menu"></i>
+    <header>
+      <div class="header">
+        <div class="container">
+          <figure class="logo2">
+            <a href="index.html" style="text-decoration: none;">
+              <img src="images/logo_transparent.png" style="width:70px; height:70px; " alt="Logo de http://renierferrer.com" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </header>
+    <div class="flexible-skype">
+      <a href="#" style="text-decoration: none;">
+        <img src="images/descarga.jpg" width="500" class="youtube-video"/>
+        <img src="images/screedbot.gif" width="350" class="auto-skype"/>
+      </a>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Portafolio 2019 - Conoce todos mis proyectos <img src="images/dev.jpg" width="50px"></p>
+        </div>
+        <div>
+          <p>Maquetado con ayuda de <a href="https://www.platzi.com" target="blank">Platzi</a> por 
+          <a href="https://twitter.com/REN13R" target="blank">@REN13R</a></p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // console.log("Hola mundo JS");
+      console.log()
+
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
+      const menu = document.querySelector('.menu');
+      const BurguerButton = document.querySelector('#burguer-menu');
+
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches){
+          console.log("Hola mundo JS");
+          BurguerButton.addEventListener('click', hideShow)
+        }
+        else{
+          BurguerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+
+      function hideShow() {
+        if (menu.classList.contains('is-active')){
+          menu.classList.remove('is-active');
+        }
+        else{
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
+  </body>
+</html>

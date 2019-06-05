@@ -1,0 +1,409 @@
+/*Reglas
+Selectores
+Declaraciones
+Propiedades
+Valores*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../src/icomoon/fonts/icomoon.eot?eq66gd');
+  src:  url('../src/icomoon/fonts/icomoon.eot?eq66gd#iefix') format('embedded-opentype'),
+    url('../src/icomoon/fonts/icomoon.ttf?eq66gd') format('truetype'),
+    url('../src/icomoon/fonts/icomoon.woff?eq66gd') format('woff'),
+    url('../src/icomoon/fonts/icomoon.svg?eq66gd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\e900";
+}
+.icon-whatsapp:before {
+  content: "\e901";
+  color: #25d366;
+}
+.icon-twitter:before {
+  content: "\e902";
+  color: #1da1f2;
+}
+.icon-skype:before {
+  content: "\e903";
+  color: #00aff0;
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+/*Fin libreria IcoMoon*/
+
+.burguer-button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top: 5px;
+	color: #fff;
+	font-size: 20px;
+}
+
+body{
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: Ubuntu; font-style: normal;
+	margin: 0;
+	background-color: #090e25;
+}
+
+h1{
+	/*text-decoration: underline;*/
+	/*font-size: 40px;*/
+	line-height: 1.5;
+	letter-spacing: -.2px;
+	color: white;
+	margin: 0;
+	/*text-transform: uppercase;
+	
+	border: 100px 510px 70px 30px;*/
+}
+
+h1 strong{
+	color: #4e66f2;
+}
+
+h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 37px;	
+}
+
+#portfolio{
+	background-color: #090e25;
+	padding: 20px;
+}
+
+.projects{
+	/*border-top: 10px solid red;
+	border-right: 10px solid green;
+	border-bottom: 10px solid orange;
+	border-left: 10px solid pink;
+
+	Para Modelo de cajas
+	Flex para colocar un elemento al lado de otro
+	Border-Box para respetar el with y height de un elemento sin sumar el border ni margin
+	display: flex;
+	box-sizing: border-box;
+	*/
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.projects-course, .projects-date, .projects-url{
+	margin: 10px 0;
+}
+
+.projects-description{
+	font-size: 18px;
+}
+
+.projects-titles{
+	font-size: 30px;
+	margin: 0px 0 10px 0;
+}
+
+.projects-details{
+	width: 50%;
+	color: #fff;
+}
+
+.projects-imgcontainer{
+	width: 50%;
+}
+
+.container{
+	/*border: 1px solid red;*/
+	max-width: 1000px;
+	/*width: 100%;*/
+	flex: 1;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	flex-wrap: inherit;
+}
+
+.header{
+	height: 70px;
+	background-color: #0e0816;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.header ol{
+	display: flex;
+	height: inherit;
+}
+
+.header ol li{
+	height: inherit;
+}
+
+.header a{
+	height: inherit;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+ol,ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure{
+	margin: 0;
+}
+
+.hero{
+	/*background-image: url('../images/hero.jpg');*/
+	background-color: #090e25;
+	/*background-size: 500px 300px;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position-x: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*flex-wrap: wrap;*/
+}
+
+.flexbox{
+	height: 300px;
+	display: flex;
+	/*flex-direction sirve para alinear los elementos hijos del FLEX
+	  donde row es horizontal por defecto y column es vertical*/
+	flex-direction: row;
+	/*flex-wrap sirve para renderizar elementos, el valor wrap permite 
+	  ordenar los elementos en la fila de abajo si estos llegan al limite 
+	  de la pantalla, mientras que nowrap no lo permite.*/
+	flex-wrap: wrap;
+	/*justify-content: sirve para alinear elementos de forma horizontal, el valor FLEX-START viene por defecto
+	  FLEX-END se ajusta a la derecha, CENTER se auto centra el contenido, SPACE-BETWEEN 
+	  distribuye el contenido con un espacio proporcional entre ellos no guarda espacio entre los bordes,
+	  SPACE-EVENLY funciona igual que el anterior pero ademas guarda un espacio entre los bordes, por
+	  ultimo SPACE-AROUND funciona similar al evenly.*/
+	justify-content: center;
+	/*align-items: sirve para alinear elementos de forma vertical.*/
+	align-items: center;
+}
+
+.box{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	border: 1px solid red;
+	/* flex-shrink es la capacidad de encogerse que tendra el elemento
+	   donde el valor 1 es maxima capacidad y 0 es minima capacidad*/
+	/*flex-shrink: 1;*/
+}
+
+.event-list{
+	display: flex;
+	flex-wrap: wrap;
+    background-color: #090e25;
+}
+
+.event{
+	margin: 1%;
+	width: 48%;
+	/*border: 1px solid red;*/
+	border-radius: 10px;
+	overflow: hidden;
+	flex-shrink: 0;
+	background: #87d7e01a;
+}
+
+.event img{
+	width: 480px;
+	height: 269px;
+	/*object-fit: Sirve para ajustar imagenes a una dimension especifica sin que se deforme.*/
+	object-fit: cover;
+}
+
+.event-detail{
+	margin: 20px 40px;
+	margin-top: -40px;
+	background-color: white;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+}
+
+.event-detail h3{
+	color: #4e66f2;
+}
+
+.event-description{
+	text-align: left;
+	color: #0e0816;
+}
+
+.event-url{
+	padding: 10px;
+	border: 1px solid;
+	color: blue;
+	border-radius: 10px;
+}
+
+#contactus {
+	display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+}
+
+#contactus h3{
+	color: #fff;
+}
+
+.social{
+	width: 50%;
+	text-align: end;
+    margin-top: 50px;
+}
+
+.social img{
+	max-width: 15%;
+	margin: 5px; 
+}
+
+.social i{
+	font-size: 72px; 
+}
+
+
+
+.form-email{
+	width: 40%;
+	margin-left: 1em;
+}
+
+
+.form-email input {
+	width: 80%;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 { 
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-email h3 {
+    margin-top: 0;
+}
+
+.footer{
+	background-color: #0e0816;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer img{
+	vertical-align: middle;
+}
+
+.footer a{
+	color: white;
+}
+
+.footer > div > div > p{
+	font-size: 16px;
+}
+
+.footer > div > div > div > p{
+	font-size: 16px;
+}
+
+.youtube-video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.flexible-vid{
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	position: relative;
+}
+
+.flexible-skype {
+    width: 100%;
+    height: 0;
+    padding-top: 37.8%;
+    position: relative;
+}
+
+.auto-skype{
+	position: fixed;
+	top: 23%;
+	left: 60%;
+}
