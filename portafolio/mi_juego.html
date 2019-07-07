@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/juego_style.css">
+    <title>Simon Dice</title>
+  </head>
+  <body>
+    <div class="gameboard">
+      <!-- El atributo data-color me permite agregar un nuevo valor al dataset
+          del elemento, con esto puedo manipular la etiqueta por medio de un
+          event ejemplo puedo capturar el valor de cada color en un addEventListener
+          luego de un click del usuario.
+      -->
+      <div id="celeste" class="color celeste left" data-color="celeste"></div>
+      <div id="violeta" class="color violeta right" data-color="violeta"></div>
+      <div id="naranja" class="color naranja left" data-color="naranja"></div>
+      <div id="verde" class="color verde right" data-color="verde"></div>
+      <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script type="text/javascript" src="src/js/mi_juego.js"></script>
+</html>

@@ -82,7 +82,7 @@ h1{
 	color: white;
 	margin: 0;
 	/*text-transform: uppercase;
-	
+
 	border: 100px 510px 70px 30px;*/
 }
 
@@ -95,7 +95,7 @@ h2{
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	margin-bottom: 37px;	
+	margin-bottom: 37px;
 }
 
 #portfolio{
@@ -217,12 +217,12 @@ figure{
 	/*flex-direction sirve para alinear los elementos hijos del FLEX
 	  donde row es horizontal por defecto y column es vertical*/
 	flex-direction: row;
-	/*flex-wrap sirve para renderizar elementos, el valor wrap permite 
-	  ordenar los elementos en la fila de abajo si estos llegan al limite 
+	/*flex-wrap sirve para renderizar elementos, el valor wrap permite
+	  ordenar los elementos en la fila de abajo si estos llegan al limite
 	  de la pantalla, mientras que nowrap no lo permite.*/
 	flex-wrap: wrap;
 	/*justify-content: sirve para alinear elementos de forma horizontal, el valor FLEX-START viene por defecto
-	  FLEX-END se ajusta a la derecha, CENTER se auto centra el contenido, SPACE-BETWEEN 
+	  FLEX-END se ajusta a la derecha, CENTER se auto centra el contenido, SPACE-BETWEEN
 	  distribuye el contenido con un espacio proporcional entre ellos no guarda espacio entre los bordes,
 	  SPACE-EVENLY funciona igual que el anterior pero ademas guarda un espacio entre los bordes, por
 	  ultimo SPACE-AROUND funciona similar al evenly.*/
@@ -307,11 +307,11 @@ figure{
 
 .social img{
 	max-width: 15%;
-	margin: 5px; 
+	margin: 5px;
 }
 
 .social i{
-	font-size: 72px; 
+	font-size: 72px;
 }
 
 
@@ -345,7 +345,7 @@ figure{
   margin-top: 10px;
 }
 
-.form-email h3 { 
+.form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -406,4 +406,8 @@ figure{
 	position: fixed;
 	top: 23%;
 	left: 60%;
+}
+
+.hero-image1023{
+  display: none;
 }

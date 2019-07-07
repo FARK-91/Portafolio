@@ -28,7 +28,20 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
+		display: none;
 	}
+
+	/* .hero-image1023{
+		display: inherit;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-image: url('../images/descarga1.jpg');
+	} */
 
 	h1{
 		font-size: 2em;
@@ -145,6 +158,41 @@
 		font-size: 1.3em;
 	}
 
+	.hero-image{
+		display: inherit;
+	}
+
+}
+
+/*En portrait Tamano estandard para iphones, samsung y huawei*/
+@media screen and (max-width: 375px){
+
+	.social {
+		width: 100%;
+		text-align: center;
+		margin-top: 5%;
+	}
+
+	.form-email {
+    width: 100%;
+    margin-left: 1em;
+	}
+
+	.form-email button {
+    margin-left: 35%;
+	}
+
+}
+
+/*En landscape Tamano estandard para iphones, samsung y huawei*/
+@media screen and (max-width: 640px){
+	.social {
+    margin-top: 25px;
+	}
+
+	.social i {
+    font-size: 65px;
+	}
 }
 
 @media screen and (max-width: 320px){
@@ -159,6 +207,24 @@
 
 	.hero{
 		padding: 2em 1em;
+	}
+
+	.form-email {
+    margin-top: 20%;
+	}
+
+	.form-email input {
+    width: 80%;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url(../images/envelope.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    margin-top: 25%;
 	}
 
 }
