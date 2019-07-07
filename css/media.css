@@ -1,13 +1,5 @@
-@media screen and (min-width: 1024px){
-	.logo2{
-		margin-left: 50%;
-	}
-}
 
 @media screen and (max-width: 1023px){
-	.logo2{
-		margin-left: 50%;
-	}
 
 	.container{
 		padding: 0 1em;
@@ -51,9 +43,14 @@
 }
 
 @media screen and (max-width: 767px){
+	/* Querys para pagina de Skype contact*/
 	.logo2{
-		margin-left: 46%;
+		height: 60px;
+		margin-left: 5%;
+    padding-top: 2%;
 	}
+
+	/* Querys para el index*/
 
 	h2{
 		font-size: 1.2em;
@@ -61,7 +58,8 @@
 	}
 
 	.burguer-button{
-	display: block;
+		display: block;
+		top: 15px;
 	}
 
 	.menu{
@@ -141,9 +139,9 @@
 }
 
 @media screen and (max-width: 480px){
-	.logo2{
-		margin-left: 45%;
-	}
+	/* .logo2{
+		margin-left: 2%;
+	} */
 
 	.projects-details{
 		font-size: 12px;
@@ -196,10 +194,6 @@
 }
 
 @media screen and (max-width: 320px){
-
-	.logo2{
-		margin-left: 38%;
-	}
 
 	h1{
 		font-size: 1.1em;
