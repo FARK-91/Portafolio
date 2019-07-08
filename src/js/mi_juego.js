@@ -5,7 +5,7 @@ const violeta = document.getElementById('violeta')
 const naranja = document.getElementById('naranja')
 const verde = document.getElementById('verde')
 const btnEmpezar = document.getElementById('btnEmpezar')
-const ULTIMO_NIVEL = 10
+const ULTIMO_NIVEL = 5
 
 // Definimos una clase que controlara el comportamiento del juego
 class Juego {
@@ -203,7 +203,7 @@ class Juego {
   perdioElJuego() {
     // swal es una libreria cdn para deplegar alerts mas elegantes.
     // dicha funcion devuelve una promesa
-    swal('Upss', 'Lo lamentamos, perdiste :(', 'error')
+    swal('Upss', 'Lo siento, haz perdido 	:(', 'error')
     .then(() => {
       this.inicializar()
     })

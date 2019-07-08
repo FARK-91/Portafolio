@@ -165,6 +165,23 @@
 /*En portrait Tamano estandard para iphones, samsung y huawei*/
 @media screen and (max-width: 375px){
 
+	.hero-image {
+		width: 170%;
+	}
+
+	.projects-course, .projects-date, .projects-url {
+    font-size: 1.5em;
+	}
+
+	.projects-url a {
+    font-size: 0.8em;
+	}
+
+	.btn-start {
+		width: 90%;
+		left: calc(90% - 210px);
+	}
+
 	.social {
 		width: 100%;
 		text-align: center;
