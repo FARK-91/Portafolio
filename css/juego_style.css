@@ -77,8 +77,16 @@ body {
   display: none;
 }
 
+/* @media screen and (max-width: 500px){
+
+  .btn-start {
+    left: calc(50% - 200px);
+  }
+
+} */
+
 /*En portrait Tamano estandard para iphones, samsung y huawei*/
-@media screen and (max-width: 375px){
+/* @media screen and (max-width: 375px){
 
 	.btn-start {
 		width: 90%;
@@ -87,10 +95,9 @@ body {
 
   .swal-modal {
     width: calc(80% - 10px);
-    /* height: 10px; */
   }
 
   .swal-footer {
     margin-top: -15px;
   }
-}
+} */
